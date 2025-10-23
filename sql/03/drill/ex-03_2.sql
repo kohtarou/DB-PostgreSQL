@@ -1,8 +1,14 @@
 SELECT
     4 AS "grade",
+    'course' AS "M",
     name,
-    level,
-    buff,
-    '要調査 / 問題なし' AS "不正行為の疑い？"
+    age || '歳' AS "age"
 FROM
-    s_characters;
+    s_users;
+
+/*
+grade | course | name  | age  
+-------+--------+-------+------
+    4 | M      | Alice | 20歳
+    4 | M      | Bob   | 25歳
+*/
