@@ -1,12 +1,11 @@
 SELECT
     id,
     name,
+    level,
     created_on
 FROM
     s_characters
+WHERE
+    name LIKE 'T%'
 ORDER BY
-    created_on
-OFFSET
-    10
-LIMIT
-    5;
+    name;
